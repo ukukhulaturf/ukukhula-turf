@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ukukhula Turf</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #1d792f, #4CAF50);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #f4f4f4;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #1d792f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .tab {
+      display: none;
+    }
+
+    .tab.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpeg" alt="Ukukhula Turf Logo" />
+    <h1>Ukukhula Turf</h1>
+    <p>Specialists in Turf, Garden & Landscaping Education</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showTab('about')">About</a>
+    <a href="#" onclick="showTab('courses')">Courses</a>
+    <a href="#" onclick="showTab('contact')">Contact Us</a>
+  </nav>
+
+  <section id="about" class="tab active">
+    <h2>About Us</h2>
+    <p>Ukukhula Turf is dedicated to providing quality education and training in turf management, gardening, and landscaping. We empower communities with the knowledge and skills to cultivate greener futures.</p>
+  </section>
+
+  <section id="courses" class="tab">
+    <h2>Our Courses</h2>
+    <ul>
+      <li>Introduction to Turf Management</li>
+      <li>Garden Design & Maintenance</li>
+      <li>Landscaping for Beginners</li>
+      <li>Soil Health & Plant Nutrition</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="tab">
+    <h2>Contact Us</h2>
+    <p>Email: info@ukukhulaturf.co.za</p>
+    <p>Phone: +27 12 345 6789</p>
+    <p>Location: Johannesburg, South Africa</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ukukhula Turf. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
